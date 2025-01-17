@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNICEF Job Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/inverse_logo/public/English-Inverse_3.png.webp?itok=GTZoi-en"
+          alt="UNICEF Logo"
+          class="logo"
+        />
+        <div class="nav-links">
+          <a href="#">Browse Jobs</a>
+          <a href="#">Log In</a>
+          <a href="#">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide active">
+              <img
+                src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/media_banner/public/UNI596007.webp?itok=kxZpbBEF"
+                alt="UNICEF Staff 1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/large/public/UNI205415.webp?itok=8N2HwELc"
+                alt="UNICEF Staff 2"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/crop_thumbnail/public/Khaled%205.jpg.webp?itok=hpcj7Myq"
+                alt="UNICEF Staff 3"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.unicef.org/careers/sites/unicef.org.careers/files/styles/media_banner/public/UN0260047.jpg.webp?itok=aeFOVFaN"
+                alt="UNICEF Staff 4"
+              />
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-dot active" data-slide="0"></button>
+            <button class="slider-dot" data-slide="1"></button>
+            <button class="slider-dot" data-slide="2"></button>
+            <button class="slider-dot" data-slide="3"></button>
+          </div>
+        </div>
+        <div class="hero-content">
+          <h1>WELCOME TO UNICEF PORTAL</h1>
+          <p>Simple, fast and efficient</p>
+
+          <div class="search-container">
+            <div class="search-box">
+              <input type="text" id="what" placeholder="What ?" />
+              <input type="text" id="where" placeholder="Where ?" />
+            </div>
+            <button id="findBtn">FIND</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rest of the content remains the same -->
+      <section class="application">
+        <h2>
+          UNITED NATION CHILDREN'S FUND(UNICEF) JOB APPLICATION PORTAL 2025/2026
+        </h2>
+
+        <div class="info">
+          <marquee
+            >UNICEF, originally called the United Nations International
+            Children's Emergency Fund in full, now officially United Nations
+            Children's Fund, is an agency of the United Nations responsible for
+            providing humanitarian and developmental aid to children worldwide.
+          </marquee>
+          <p class="highlight">
+            UNICEF works to help disadvantaged children worldwide
+          </p>
+          <p class="eligibility">ALL NATIONALITIES ARE ELIGIBLE TO APPLY.</p>
+        </div>
+
+        <div class="form-container">
+          <h3>APPLICATION FORM</h3>
+          <form id="applicationForm">
+            <select id="title" required>
+              <option value="">Select Title</option>
+              <option value="mr">Mr.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="ms">Ms.</option>
+            </select>
+
+            <div class="name-group">
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <input type="email" id="email" placeholder="E-mail" required />
+            <input type="date" id="dob" placeholder="Date Of Birth" required />
+            <input type="text" id="country" placeholder="Country" required />
+            <input
+              type="text"
+              id="state"
+              placeholder="State/Province"
+              required
+            />
+
+            <button type="submit" id="applyBtn">APPLY</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
